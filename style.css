@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+.moon {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 200px;
+}
+.moon img {
+    width: 100%;
+}
+.snowflake {
+    position: absolute;
+    top: -10vh;
+    animation: fall 1s linear forwards;
+    color: #fff;
+    font-size: 20px;
+    transform: rotate(0deg);
+}
+@keyframes fall {
+    to {
+        top: 110vh;
+        transform: rotate(180deg);
+    }
+}
